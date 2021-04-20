@@ -26,15 +26,15 @@ This simulation shows that the percentage of wins, that is choosing the door
 with the car behind it, is about 66%, while the percentage of losses is 33%
 (Figure 1). This is what is expected.
 
-![Monty Hall Barplot](MontyHallBarplot.png)
+![Monty Hall Barplot](MontyHallBarplot.png)   
 Figure 1 - a bar plot showing the percentage of wins and losses after running
 the Monty Hall simulation.
 
 ## How to Execute Files
-**monty_hall_game.py**   
+*monty_hall_game.py*   
 `$ python3 monty_hall_game.py`   
 This is for one simulation of the game.
 
-**run_simulation**   
+*run_simulation*   
 `$ R run_simulation.R`
 
