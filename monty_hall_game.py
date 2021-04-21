@@ -28,9 +28,9 @@ def play_game():
     final_choice = change_choice(contestant_choice, door)
 
     # Check if a win
-    win = (final_choice == car)
+    win_car = (final_choice == car)
 
-    return win
+    return win_car
 
 
 def random_choice():
@@ -55,7 +55,7 @@ def open_door(car, contestant_choice):
     # Decide which door to open
     if car != contestant_choice:
         for val in range(1, 4):
-            if val != car and val != contestant_choice:
+            if val not in (car, contestant_choice):
                 door = val
 
     # If the contestant chooses the door the car is behind initially
@@ -82,7 +82,7 @@ def change_choice(contestant_choice, door):
     choices.remove(contestant_choice)
 
     return choices[0]
-    
+
 
 if __name__ == '__main__':
     win = play_game()
